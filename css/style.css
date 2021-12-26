@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "DM Serif Display", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.para {
+  font-size: clamp(16px, 1.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.color-gray {
+  color: #837d87;
+}
+
+.big-heading {
+  font-size: clamp(51.2px, 4vw, 7rem);
+  color: #2b272f;
+  line-height: 1;
+  margin-bottom: 7rem;
+}
+
+.small-heading {
+  font-size: clamp(32px, 3vw, 5rem);
+  color: #2b272f;
+}
+
+.medium-heading {
+  font-size: clamp(32px, 3vw, 5rem);
+  color: #2b272f;
+  line-height: 1;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+button {
+  background-color: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: clamp(16px, 1.5vw, 3rem);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border: 2px solid #fff;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mx-1 {
+  margin-inline: 1rem;
+}
+
+.my-1 {
+  margin-block: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.mx-2 {
+  margin-inline: 2rem;
+}
+
+.my-2 {
+  margin-block: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.mx-3 {
+  margin-inline: 3rem;
+}
+
+.my-3 {
+  margin-block: 3rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.mx-4 {
+  margin-inline: 4rem;
+}
+
+.my-4 {
+  margin-block: 4rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.mx-5 {
+  margin-inline: 5rem;
+}
+
+.my-5 {
+  margin-block: 5rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.m-6 {
+  margin: 6rem;
+}
+
+.mx-6 {
+  margin-inline: 6rem;
+}
+
+.my-6 {
+  margin-block: 6rem;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.m-7 {
+  margin: 7rem;
+}
+
+.mx-7 {
+  margin-inline: 7rem;
+}
+
+.my-7 {
+  margin-block: 7rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.m-8 {
+  margin: 8rem;
+}
+
+.mx-8 {
+  margin-inline: 8rem;
+}
+
+.my-8 {
+  margin-block: 8rem;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
+.intro nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+}
+
+.intro .hero img {
+  width: 100%;
+  max-height: 100%;
+  margin-bottom: -4px;
+}
+
+.intro .hero article {
+  text-align: center;
+  background-color: #2d2640;
+  padding: 6.5rem 1.5rem;
+  margin-top: 0;
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.intro .hero article .bg-holder {
+  position: relative;
+  right: -2rem;
+  bottom: 10rem;
+  background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.intro .hero article * {
+  color: #fff;
+}
+
+.intro .hero h1 {
+  font-size: clamp(51.2px, 4vw, 7rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.about-us {
+  padding: 8rem 1.5rem;
+  text-align: center;
+}
+
+.about-us .line {
+  width: 50%;
+  height: 1px;
+  margin: 3.5rem auto;
+  background-color: #95a9c6;
+}
+
+.find-out-more {
+  background-color: #2d2640;
+  padding-block: 5rem;
+  text-align: center;
+  background-image: url("../images//bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 90vw;
+  margin-inline: auto;
+}
+
+.find-out-more h1 {
+  color: #fff;
+}
+
+footer {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 5rem;
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+footer .logos {
+  color: #95a9c6;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .line-two {
+  width: 90%;
+  height: 1px;
+  margin-inline: auto;
+  background-color: #95a9c6;
+}
+
+footer .links {
+  text-transform: uppercase;
+}
+
+footer .links h3 {
+  color: #837d87;
+}
+
+footer .links ul {
+  color: #2d2640;
+}
+
+footer .links li {
+  margin-block: 1.2rem;
+}
