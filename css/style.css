@@ -5,12 +5,12 @@
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h1,
 h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
 ul {
@@ -29,7 +29,7 @@ ul {
 }
 
 .big-heading {
-  font-size: clamp(51.2px, 4vw, 7rem);
+  font-size: clamp(51.2px, 5vw, 8rem);
   color: #2b272f;
   line-height: 1;
   margin-bottom: 7rem;
@@ -126,11 +126,111 @@ button:hover {
   margin-bottom: 3rem;
 }
 
+.m-4 {
+  margin: 4rem;
+}
+
+.mx-4 {
+  margin-inline: 4rem;
+}
+
+.my-4 {
+  margin-block: 4rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.mx-5 {
+  margin-inline: 5rem;
+}
+
+.my-5 {
+  margin-block: 5rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.m-6 {
+  margin: 6rem;
+}
+
+.mx-6 {
+  margin-inline: 6rem;
+}
+
+.my-6 {
+  margin-block: 6rem;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.m-7 {
+  margin: 7rem;
+}
+
+.mx-7 {
+  margin-inline: 7rem;
+}
+
+.my-7 {
+  margin-block: 7rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.m-8 {
+  margin: 8rem;
+}
+
+.mx-8 {
+  margin-inline: 8rem;
+}
+
+.my-8 {
+  margin-block: 8rem;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
 .intro nav {
   display: flex;
   justify-content: space-between !important;
   align-items: center;
-  padding: 32px;
+  padding: 19.2px;
 }
 
 .intro nav .nav-links,
@@ -150,7 +250,7 @@ button:hover {
   padding-block: 4rem;
   text-align: center;
   height: 70vh;
-  background-image: url('../images//bg-pattern-mobile-nav.svg');
+  background-image: url("../images//bg-pattern-mobile-nav.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -177,8 +277,7 @@ button:hover {
   background-color: #2d2640;
   padding: 6.5rem 1.5rem;
   margin-top: 0;
-  background-image: url('../images/bg-pattern-intro-left-mobile.svg'),
-    url('../images/bg-pattern-intro-right-mobile.svg');
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg"), url("../images/bg-pattern-intro-right-mobile.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom -170px right;
 }
@@ -188,7 +287,7 @@ button:hover {
 }
 
 .intro .hero h1 {
-  font-size: clamp(51.2px, 4vw, 7rem);
+  font-size: clamp(51.2px, 5vw, 8rem);
   line-height: 1;
   margin-bottom: 1rem;
 }
@@ -213,7 +312,7 @@ button:hover {
   background-color: #2d2640;
   padding-block: 5rem;
   text-align: center;
-  background-image: url('../images//bg-pattern-how-we-work-mobile.svg');
+  background-image: url("../images//bg-pattern-how-we-work-mobile.svg");
   background-repeat: no-repeat;
   background-position: top right;
   width: 90vw;
@@ -228,8 +327,9 @@ footer {
   background-color: #fafafa;
   text-align: center;
   padding: 5rem;
-  background-image: url('../images/bg-pattern-footer-mobile.svg');
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
+  margin-top: 7rem;
 }
 
 footer .logos {
@@ -315,7 +415,7 @@ footer .links li {
   .hero-container {
     background-color: #2d2640;
     background-image: none !important;
-    background-image: url('../images/bg-pattern-intro-right-desktop.svg') !important;
+    background-image: url("../images/bg-pattern-intro-right-desktop.svg") !important;
     background-repeat: no-repeat;
     background-position: top -100px right;
     background-size: contain;
@@ -376,7 +476,7 @@ footer .links li {
     justify-content: space-around;
     align-items: center !important;
     gap: 20%;
-    background-image: url('../images//bg-pattern-how-we-work-desktop.svg');
+    background-image: url("../images//bg-pattern-how-we-work-desktop.svg");
     max-height: fit-content;
     padding-block: 2rem;
     width: 80vw;
@@ -390,7 +490,7 @@ footer .links li {
     top: 1.5rem;
   }
   footer {
-    background-image: url('../images/bg-pattern-footer-desktop.svg');
+    background-image: url("../images/bg-pattern-footer-desktop.svg");
   }
   footer ion-icon {
     font-size: 2rem;
