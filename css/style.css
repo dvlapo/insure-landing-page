@@ -5,12 +5,12 @@
 }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h1,
 h2 {
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
 }
 
 ul {
@@ -58,6 +58,7 @@ button {
   border: none;
   border: 2px solid #fff;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 button:hover {
@@ -125,106 +126,6 @@ button:hover {
   margin-bottom: 3rem;
 }
 
-.m-4 {
-  margin: 4rem;
-}
-
-.mx-4 {
-  margin-inline: 4rem;
-}
-
-.my-4 {
-  margin-block: 4rem;
-}
-
-.mt-4 {
-  margin-top: 4rem;
-}
-
-.mb-4 {
-  margin-bottom: 4rem;
-}
-
-.m-5 {
-  margin: 5rem;
-}
-
-.mx-5 {
-  margin-inline: 5rem;
-}
-
-.my-5 {
-  margin-block: 5rem;
-}
-
-.mt-5 {
-  margin-top: 5rem;
-}
-
-.mb-5 {
-  margin-bottom: 5rem;
-}
-
-.m-6 {
-  margin: 6rem;
-}
-
-.mx-6 {
-  margin-inline: 6rem;
-}
-
-.my-6 {
-  margin-block: 6rem;
-}
-
-.mt-6 {
-  margin-top: 6rem;
-}
-
-.mb-6 {
-  margin-bottom: 6rem;
-}
-
-.m-7 {
-  margin: 7rem;
-}
-
-.mx-7 {
-  margin-inline: 7rem;
-}
-
-.my-7 {
-  margin-block: 7rem;
-}
-
-.mt-7 {
-  margin-top: 7rem;
-}
-
-.mb-7 {
-  margin-bottom: 7rem;
-}
-
-.m-8 {
-  margin: 8rem;
-}
-
-.mx-8 {
-  margin-inline: 8rem;
-}
-
-.my-8 {
-  margin-block: 8rem;
-}
-
-.mt-8 {
-  margin-top: 8rem;
-}
-
-.mb-8 {
-  margin-bottom: 8rem;
-}
-
 .intro nav {
   display: flex;
   justify-content: space-between !important;
@@ -233,8 +134,32 @@ button:hover {
 }
 
 .intro nav .nav-links,
-.intro nav .btn {
+.intro nav .btn,
+.intro nav .white-line,
+.intro nav .close {
   display: none;
+}
+
+.intro nav .nav-links {
+  background-color: #2b272f;
+  color: #fff;
+  position: absolute;
+  top: 6.5rem;
+  left: 0;
+  width: 100vw;
+  padding-block: 4rem;
+  text-align: center;
+  height: 70vh;
+  background-image: url('../images//bg-pattern-mobile-nav.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.intro nav .nav-links li {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .intro .hero img {
@@ -252,18 +177,10 @@ button:hover {
   background-color: #2d2640;
   padding: 6.5rem 1.5rem;
   margin-top: 0;
-  background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-image: url('../images/bg-pattern-intro-left-mobile.svg'),
+    url('../images/bg-pattern-intro-right-mobile.svg');
   background-repeat: no-repeat;
-  background-position: top left;
-}
-
-.intro .hero article .bg-holder {
-  position: relative;
-  right: -2rem;
-  bottom: 10rem;
-  background-image: url("../images/bg-pattern-intro-right-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: right;
+  background-position: top left, bottom -170px right;
 }
 
 .intro .hero article * {
@@ -296,7 +213,7 @@ button:hover {
   background-color: #2d2640;
   padding-block: 5rem;
   text-align: center;
-  background-image: url("../images//bg-pattern-how-we-work-mobile.svg");
+  background-image: url('../images//bg-pattern-how-we-work-mobile.svg');
   background-repeat: no-repeat;
   background-position: top right;
   width: 90vw;
@@ -311,7 +228,7 @@ footer {
   background-color: #fafafa;
   text-align: center;
   padding: 5rem;
-  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-image: url('../images/bg-pattern-footer-mobile.svg');
   background-repeat: no-repeat;
 }
 
@@ -353,10 +270,12 @@ footer .links li {
 
 @media (min-width: 875px) {
   .intro nav {
-    width: 85vw;
+    width: 80vw;
     margin-inline: auto;
+    padding-inline: 0;
   }
-  .intro nav .hamburger {
+  .intro nav .hamburger,
+  .intro nav .nav-links-btn {
     display: none;
   }
   .intro nav .btn {
@@ -369,38 +288,57 @@ footer .links li {
     color: #fff !important;
     border: 2px solid fff;
   }
-  .intro nav ul {
+  .intro nav .btn {
+    display: inline-block;
+  }
+  .intro nav .nav-links {
     display: flex;
     gap: 3rem;
     color: #837d87;
     margin-left: auto;
     margin-right: 3rem;
+    background-color: unset;
+    position: static;
+    width: unset;
+    padding-block: 0;
+    height: unset;
   }
-  .intro nav ul li {
+  .intro nav .nav-links li {
     font-weight: 700;
     cursor: pointer;
+    font-size: unset;
+    margin-bottom: 0;
   }
-  .intro nav ul li:hover {
+  .intro nav .nav-links li:hover {
     color: #2b272f;
+  }
+  .hero-container {
+    background-color: #2d2640;
+    background-image: none !important;
+    background-image: url('../images/bg-pattern-intro-right-desktop.svg') !important;
+    background-repeat: no-repeat;
+    background-position: top -100px right;
+    background-size: contain;
+  }
+  .hero-container .white-line {
+    width: 25%;
+    background-color: #fff;
+    height: 1px;
+    margin-bottom: 4rem;
   }
   .hero {
     display: flex;
-    gap: 5%;
+    gap: 10%;
+    justify-content: space-between;
     flex-direction: row-reverse;
-    background-color: #2d2640;
-    background-image: none !important;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding: 0 !important;
+    width: 80vw;
+    margin-inline: auto;
   }
   .hero article {
     text-align: left !important;
     padding-inline: 0 !important;
     max-width: 50%;
     background-image: none !important;
-  }
-  .hero article p {
-    width: 85%;
   }
   .hero .img-intro-desktop {
     display: block !important;
@@ -410,12 +348,12 @@ footer .links li {
   }
   .hero .img-holder {
     position: relative;
-    top: 8rem;
-    right: 6rem;
+    top: 7rem;
+    right: 3rem;
     padding-right: 7.5vw !important;
   }
   .hero .img-holder img {
-    width: 120%;
+    width: 140%;
   }
   .about-us {
     width: 85vw;
@@ -438,7 +376,7 @@ footer .links li {
     justify-content: space-around;
     align-items: center !important;
     gap: 20%;
-    background-image: url("../images//bg-pattern-how-we-work-desktop.svg");
+    background-image: url('../images//bg-pattern-how-we-work-desktop.svg');
     max-height: fit-content;
     padding-block: 2rem;
     width: 80vw;
@@ -452,10 +390,13 @@ footer .links li {
     top: 1.5rem;
   }
   footer {
-    background-image: url("../images/bg-pattern-footer-desktop.svg");
+    background-image: url('../images/bg-pattern-footer-desktop.svg');
   }
   footer ion-icon {
     font-size: 2rem;
+  }
+  footer .line-two {
+    width: 80vw;
   }
   footer .logo-and-links,
   footer .links {
