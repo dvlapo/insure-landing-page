@@ -39,7 +39,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [SCSS](https://reactjs.org/)
+- [SCSS](https://sass-lang.com/)
 
 ## Author
 
